@@ -1,32 +1,25 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2580
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+# Marketing Campaign Analysis
 
-\f0\fs24 \cf0 # Marketing Campaign Analysis\
-\
-## Scenario\
-As a data analyst working for an advertising agency, Client A, a cosmetic company, has been implementing digital advertising across various channels such as search, display, and social media. They seek your expertise in understanding the seasonality and devising effective marketing campaign strategies for peak seasons to optimize sales. What approach would you recommend taking in this scenario?\
-\
-## Step 1: Identify Key Metrics\
-\
-In this step, we define key metrics that form the foundation of our analysis, categorized into Seasonality Metrics and Campaign Performance Metrics.\
-\
-### Seasonality Metrics:\
-1. **Sales Volume:** Reflects revenue patterns over time, helping identify seasonal sales trends.\
-2. **Keyword Search Volume:** Indicates customer demand for products during specific seasons.\
-3. **Web Traffic (Sessions):** Measures user engagement, revealing peak website visitation periods.\
-\
-### Campaign Performance Metrics:\
-1. **Attributed Sales:** Measures revenue directly attributed to advertising efforts.\
-2. **Conversion Rate (CR):**\
-   - **Formula:** CR = (Number of Conversions / Number of Impressions) * 100\
-   - **Explanation:** Gauges campaign efficiency in converting users into customers.\
-3. **Return on Advertising Spend (ROAS):**\
-   - **Formula:** ROAS = (Attributed Sales / Advertising Spend)\
-   - **Explanation:** Evaluates advertising profitability.\
+## Scenario
+As a data analyst working for an advertising agency, Client A, a cosmetic company, has been implementing digital advertising across various channels such as search, display, and social media. They seek your expertise in understanding the seasonality and devising effective marketing campaign strategies for peak seasons to optimize sales. What approach would you recommend taking in this scenario?
+
+## Step 1: Identify Key Metrics
+
+In this step, we define key metrics that form the foundation of our analysis, categorized into Seasonality Metrics and Campaign Performance Metrics.
+
+### Seasonality Metrics:
+1. **Sales Volume:** Reflects revenue patterns over time, helping identify seasonal sales trends.
+2. **Keyword Search Volume:** Indicates customer demand for products during specific seasons.
+3. **Web Traffic (Sessions):** Measures user engagement, revealing peak website visitation periods.
+
+### Campaign Performance Metrics:
+1. **Attributed Sales:** Measures revenue directly attributed to advertising efforts.
+2. **Conversion Rate (CR):**
+   - **Formula:** CR = (Number of Conversions / Number of Impressions) * 100
+   - **Explanation:** Gauges campaign efficiency in converting users into customers.
+3. **Return on Advertising Spend (ROAS):**
+   - **Formula:** ROAS = (Attributed Sales / Advertising Spend)
+   - **Explanation:** Evaluates advertising profitability.
 \
 ## Step 2: Analyze Seasonality with SQL and Visualizations\
 \
