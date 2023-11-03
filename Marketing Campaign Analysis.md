@@ -1,11 +1,11 @@
 # Marketing Campaign Analysis
 
 ## Scenario
-As a data analyst working for an advertising agency, Client A, a cosmetic company, has been implementing digital advertising across various channels such as search, display, and social media. They seek your expertise in understanding the seasonality and devising effective marketing campaign strategies for peak seasons to optimize sales. What approach would you recommend taking in this scenario?
+As a data analyst working for an advertising agency, Client A, a cosmetic company, has been implementing digital advertising across various channels such as search, display, and social media. They seek your expertise in understanding the **seasonality** and devising **effective marketing campaign strategies** for peak seasons to optimize sales. What approach would you recommend taking in this scenario?
 
 ## Step 1: Identify Key Metrics
 
-In this step, we define key metrics that form the foundation of our analysis, categorized into Seasonality Metrics and Campaign Performance Metrics.
+In this step, we define key metrics that form the foundation of our analysis.
 
 ### Seasonality Metrics:
 1. **Sales Volume:** Reflects revenue patterns over time, helping identify seasonal sales trends.
@@ -14,29 +14,32 @@ In this step, we define key metrics that form the foundation of our analysis, ca
 
 ### Campaign Performance Metrics:
 1. **Attributed Sales:** Measures revenue directly attributed to advertising efforts.
-2. **Conversion Rate (CR):**
-   - **Formula:** CR = (Number of Conversions / Number of Impressions) * 100
-   - **Explanation:** Gauges campaign efficiency in converting users into customers.
-3. **Return on Advertising Spend (ROAS):**
-   - **Formula:** ROAS = (Attributed Sales / Advertising Spend)
-   - **Explanation:** Evaluates advertising profitability.
-\
-## Step 2: Analyze Seasonality with SQL and Visualizations\
-\
-In this step, we explore seasonality trends using SQL queries and visualizations.\
-\
-### Sales Volume & Website Traffic Trends\
-The SQL query groups sales and sessions by month to examine changes over time.\
-```sql\
--- SQL query for Sales volume & website traffic trends\
-select month(date) as month\
-, sum(sales) as sales\
-, sum(sessions) as sessions\
-from site_data \
-where client = 'A' \
-group by 1 \
-```\
-\
+2. **Conversion Rate (CR):** CR = (Number of Conversions / Number of Impressions) * 100. Gauges campaign efficiency in converting users into customers.
+3. **Return on Advertising Spend (ROAS):** ROAS = (Attributed Sales / Advertising Spend). Evaluates advertising profitability.
+
+**Answer:**
+
+<img width="465" alt="Screen Shot 2023-11-02 at 8 17 43 PM" src="https://github.com/mengtingzz/marketing-campaign-analysis/assets/123043791/53903cfa-d42a-421c-8fc6-9bab673e7cff">
+
+## Step 2: Analyze Seasonality with SQL and Visualizations
+
+In this step, we explore seasonality trends using SQL queries and visualizations.
+
+### Sales Volume & Website Traffic Trends
+The SQL query groups sales and sessions by month to examine changes over time.
+```sql
+-- SQL query for Sales volume & website traffic trends
+SELECT month(date) as month
+, sum(sales) as sales
+, sum(sessions) as sessions
+FROM site_data 
+WHERE client = 'A' 
+GROUP BY 1 
+```
+**Answer:**
+
+<img width="632" alt="salestrends" src="https://github.com/mengtingzz/marketing-campaign-analysis/assets/123043791/6883be71-d84e-46bf-a14f-d6e47b3e728d">
+
 ### Keywords Search Volume\
 We identify when consumers are most actively searching for our products.\
 ```sql\
@@ -64,13 +67,7 @@ select channel\
 from campaign_performance where client = 'A' \
 and date between '2022-01-01' and '2022-12-31' group by 1 \
 ```\
-\
-| Channel | Attributed Sales | Conversion Rate | ROAS | Net Profit |\
-| ------- | ---------------- | --------------- | ---- | ---------- |\
-| Search  | $372,767          | 1.06%           | $1.69 | $152,143   |\
-| Social  | $277,592          | 0.80%           | $1.33 | $69,256    |\
-| Display | $228,331          | 0.68%           | $0.98 | -$3,816   |\
-\
+
 **Insight:**\
 Allocate a larger budget to the highly effective search and social campaigns, while also incorporating display advertising to enhance awareness and acquire new users.\
 \
